@@ -174,8 +174,8 @@ onMounted(() => {
       </ul>
     </nav>
   </header>
-  <main id="home" class="md:px-4 w-full h-auto">
-    <div class="w-full md:h-screen h-[320px] relative px-4 md:px-0">
+  <main id="home" class="w-full h-auto">
+    <div class="w-full md:h-screen h-[320px] relative">
       <div class="w-full md:h-screen h-full absolute flex justify-center items-center blur-3xl z-10 overflow-hidden">
         <section id="blobOne" class="md:w-[400px] md:h-[400px] w-[200px] h-[200px] backdrop-blur-3xl">
           <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -214,7 +214,7 @@ onMounted(() => {
           </svg>
         </section>
       </div>
-      <article class="flex justify-center font-bold flex-col w-full md:gap-8 gap-6 md:h-screen font-montserrat">
+      <article class="flex px-4 justify-center font-bold flex-col w-full md:gap-8 gap-6 md:h-screen font-montserrat">
         <h1 id="hello"
           class="uppercase md:text-9xl text-4xl text-end md:mt-10 mt-24 text-slate-100 tracking-wider opacity-0">
           Hello, I'm<br>Rheno Resky<br>Nugraha
@@ -239,7 +239,7 @@ onMounted(() => {
               transform="translate(100 100)" />
           </svg>
         </div>
-        <div class="w-full md:px-0 px-4 h-full flex flex-col md:justify-center md:items-center absolute z-20">
+        <div class="w-full px-4 h-full flex flex-col md:justify-center md:items-center absolute z-20">
           <h2 id="about"
             class="uppercase md:text-6xl text-3xl font-semibold font-montserrat text-center text-slate-100 mb-4 md:mb-10">
             About me
@@ -252,7 +252,7 @@ onMounted(() => {
         </div>
       </section>
     </div>
-    <div class="w-full md:h-[620px] md:px-0 px-4 h-[600px] md:pt-14 overflow-hidden">
+    <div class="w-full md:h-[620px] px-4 h-[600px] md:pt-14 overflow-hidden">
       <h2 id="portfolioHead"
         class="uppercase md:text-6xl text-3xl font-semibold font-montserrat text-center text-slate-100 mb-10">
         Portfolio
@@ -284,7 +284,7 @@ onMounted(() => {
       </swiper-container>
     </div>
   </main>
-  <footer id="contack" class="w-full md:px-0 h-auto md:mt-24 text-slate-100 flex-wrap px-4">
+  <footer id="contack" class="w-full h-auto md:mt-24 text-slate-100 flex-wrap px-4">
     <div class="w-full flex md:flex-row flex-col md:gap-0 gap-8 mb-10">
       <section id="contackItem" class="md:basis-1/3 w-full h-full flex flex-col items-center gap-4">
         <h3 class="text-xl font-semibold font-montserrat">Contack</h3>
