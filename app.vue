@@ -9,7 +9,6 @@ import undangan from '~/assets/img/undangan.png'
 import {register} from 'swiper/element/bundle';
 
 register();
-gsap.registerPlugin(ScrollTrigger);
 
 const menu = ref(false)
 
@@ -41,12 +40,8 @@ const dataProject = reactive([
 ])
 const spaceBetween = 12;
 
-const onTapStart = (e) => {
-  const [swiper, pointer] = e.detail;
-  console.log(swiper)
-}
-
 onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
   const tlAvatar = gsap.timeline({
     scrollTrigger: {
       trigger: '#avatarBox',
@@ -263,7 +258,7 @@ onMounted(() => {
         Portfolio
       </h2>
       <swiper-container slides-per-view="1" :space-between="spaceBetween" :pagination="{ hideOnClick: true }"
-        :breakpoints="{ 768: { slidesPerView: 3, } }" @swipertouchstart="onTapStart">
+        :breakpoints="{ 768: { slidesPerView: 3, } }">
         <swiper-slide id="portfolioItem" v-for="(project, i) of dataProject" :key="i" class="bg-[#252438] p-6 rounded">
           <div class="overflow-hidden rounded-md mb-4">
             <img :src="project.image" alt="AspirasiDesa">
