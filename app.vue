@@ -239,7 +239,7 @@ onMounted(() => {
               transform="translate(100 100)" />
           </svg>
         </div>
-        <div class="w-full px-4 h-full flex flex-col md:justify-center md:items-center absolute z-20">
+        <div class="w-full md:px-0 px-4 h-full flex flex-col md:justify-center md:items-center absolute z-20">
           <h2 id="about" class="uppercase md:text-6xl text-3xl font-semibold text-center text-slate-100 mb-4 md:mb-10">
             About me
           </h2>
