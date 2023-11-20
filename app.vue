@@ -153,12 +153,12 @@ onMounted(() => {
       class="font-great w-14 text-4xl hover:bg-gradient-to-r from-[#aeff4f] to-[#ff4545] bg-clip-text transition duration-500 ease-in-out hover:text-transparent">
       R
     </span>
-    <nav class="relative">
+    <nav class="relative font-montserrat">
       <button class="md:hidden" @click="menu = !menu">
         <Icon :name="menu ? 'radix-icons:cross-1' : 'radix-icons:hamburger-menu'" color="white" size="32px" />
       </button>
       <ul :class="menu ? 'flex' : 'hidden'"
-        class="md:flex flex-col md:relative md:bg-transparent md:text-slate-100 absolute bg-slate-100 text-slate-900 px-8 rounded md:py-0 md:px-0 py-4 right-10 top-1 md:flex-row justify-center items-center md:gap-8 gap-4 uppercase font-montserrat text-sm font-semibold">
+        class="md:flex flex-col md:relative md:bg-transparent md:text-slate-100 absolute bg-slate-100 text-slate-900 px-8 rounded md:py-0 md:px-0 py-4 right-10 top-1 md:flex-row justify-center items-center md:gap-8 gap-4 uppercase text-sm font-semibold">
         <li
           class="hover:bg-gradient-to-r from-[#94B3FD] to-[#FF449F] bg-clip-text transition duration-500 ease-in-out hover:text-transparent hover:scale-110">
           <a href="#home">Home</a>
@@ -174,7 +174,7 @@ onMounted(() => {
       </ul>
     </nav>
   </header>
-  <main id="home" class="w-full h-auto">
+  <main id="home" class="w-full h-auto font-montserrat">
     <div class="w-full md:h-screen h-[320px] relative">
       <div class="w-full md:h-screen h-full absolute flex justify-center items-center blur-3xl z-10 overflow-hidden">
         <section id="blobOne" class="md:w-[400px] md:h-[400px] w-[200px] h-[200px] backdrop-blur-3xl">
@@ -214,7 +214,7 @@ onMounted(() => {
           </svg>
         </section>
       </div>
-      <article class="flex px-4 justify-center font-bold flex-col w-full md:gap-8 gap-6 md:h-screen font-montserrat">
+      <article class="flex px-4 justify-center font-bold flex-col w-full md:gap-8 gap-6 md:h-screen">
         <h1 id="hello"
           class="uppercase md:text-9xl text-4xl text-end md:mt-10 mt-24 text-slate-100 tracking-wider opacity-0">
           Hello, I'm<br>Rheno Resky<br>Nugraha
@@ -240,8 +240,7 @@ onMounted(() => {
           </svg>
         </div>
         <div class="w-full px-4 h-full flex flex-col md:justify-center md:items-center absolute z-20">
-          <h2 id="about"
-            class="uppercase md:text-6xl text-3xl font-semibold font-montserrat text-center text-slate-100 mb-4 md:mb-10">
+          <h2 id="about" class="uppercase md:text-6xl text-3xl font-semibold text-center text-slate-100 mb-4 md:mb-10">
             About me
           </h2>
           <p id="about" class="md:text-2xl text-lg font-light text-center text-slate-100 md:w-2/3">
@@ -253,8 +252,7 @@ onMounted(() => {
       </section>
     </div>
     <div class="w-full md:h-[620px] px-4 h-[600px] md:pt-14 overflow-hidden">
-      <h2 id="portfolioHead"
-        class="uppercase md:text-6xl text-3xl font-semibold font-montserrat text-center text-slate-100 mb-10">
+      <h2 id="portfolioHead" class="uppercase md:text-6xl text-3xl font-semibold text-center text-slate-100 mb-10">
         Portfolio
       </h2>
       <swiper-container slides-per-view="1" :space-between="spaceBetween" :pagination="{ hideOnClick: true }"
@@ -264,7 +262,7 @@ onMounted(() => {
             <img :src="project.image" alt="AspirasiDesa">
           </div>
           <div class="text-slate-100">
-            <h3 class="text-2xl font-montserrat font-semibold mb-1">
+            <h3 class="text-2xl font-semibold mb-1">
               {{ project.title }}
             </h3>
             <p class="text-lg font-light mb-2 line-clamp-3">
@@ -284,10 +282,10 @@ onMounted(() => {
       </swiper-container>
     </div>
   </main>
-  <footer id="contack" class="w-full h-auto md:mt-24 font-montserrat text-slate-100 flex-wrap px-4">
+  <footer id="contack" class="w-full font-montserrat h-auto md:mt-24 text-slate-100 flex-wrap px-4">
     <div class="w-full flex md:flex-row flex-col md:gap-0 gap-8 mb-10">
       <section id="contackItem" class="md:basis-1/3 w-full h-full flex flex-col items-center gap-4">
-        <h3 class="text-xl font-semibold font-montserrat">Contack</h3>
+        <h3 class="text-xl font-semibold">Contack</h3>
         <ul class="flex flex-col gap-3 items-center">
           <li>
             <Icon name="logos:whatsapp-icon" size="24px" /><a href="https://wa.me/081214196304"
@@ -300,7 +298,7 @@ onMounted(() => {
         </ul>
       </section>
       <section id="contackItem" class="md:basis-1/3 w-full h-full flex flex-col items-center gap-4">
-        <h3 class="text-xl font-semibold font-montserrat text-center">Technology Used</h3>
+        <h3 class="text-xl font-semibold text-center">Technology Used</h3>
         <ul class="flex flex-col gap-3 items-center">
           <li>
             <Icon name="logos:nuxt-icon" size="24px" /><span class="ml-2">Nuxt 3</span>
@@ -322,7 +320,7 @@ onMounted(() => {
         </ul>
       </section>
       <section id="contackItem" class="md:basis-1/3 w-full h-full flex flex-col items-center gap-4">
-        <h3 class="text-xl font-semibold font-montserrat text-center">Social Media</h3>
+        <h3 class="text-xl font-semibold text-center">Social Media</h3>
         <ul class="flex flex-col gap-3 items-center">
           <li>
             <Icon name="uil:github" color="white" size="32px" /><a href="https://github.com/rhenoresky"
