@@ -284,7 +284,7 @@ onMounted(() => {
       </swiper-container>
     </div>
   </main>
-  <footer id="contack" class="w-full h-auto md:mt-24 text-slate-100 flex-wrap px-4">
+  <footer id="contack" class="w-full h-auto md:mt-24 font-montserrat text-slate-100 flex-wrap px-4">
     <div class="w-full flex md:flex-row flex-col md:gap-0 gap-8 mb-10">
       <section id="contackItem" class="md:basis-1/3 w-full h-full flex flex-col items-center gap-4">
         <h3 class="text-xl font-semibold font-montserrat">Contack</h3>
