@@ -15,26 +15,26 @@ const menu = ref(false)
 const dataProject = reactive([
   {
     image: aspirasi,
-    title: 'CMS Aspirasi Desa',
-    description: 'Proyek ini bertujuan untuk menciptakan sebuah platform online yang memberikan ruang bagi penduduk desa untuk berbagi ide, memberikan aspirasi, dan memperkuat komunikasi antara warga desa. Website ini memfasilitasi tiga jenis pengguna utama: admin, user, dan tamu, dengan tujuan meningkatkan partisipasi masyarakat dalam pembangunan desa.',
+    title: 'CMS Village Aspiration',
+    description: 'This project aims to create an online platform that provides a space for villagers to share ideas, aspirations, and strengthen communication between villagers. The website facilitates three main types of users: admins, users, and guests, with the aim of increasing community participation in village development.',
     github: 'https://github.com/cmsaspirasidesa/asp-desa-frontend'
   },
   {
     image: musicplayer,
     title: 'Music Player',
-    description: 'Platform pengelolaan album dan musik online yang memungkinkan pengguna untuk menyusun dan mengelola koleksi musik mereka. Selain itu, platform ini menyediakan fitur pemutar musik terintegrasi sehingga pengguna dapat mendengarkan lagu-lagu favorit mereka secara online. Proyek ini masih dalam tahap pengembangan, dan beberapa fitur backend belum sepenuhnya diimplementasikan.',
+    description: 'Online music and album management platform that allows users to organize and manage their music collection. In addition, the platform provides an integrated music player feature so that users can listen to their favorite songs online. The project is still under development, and some of the backend features have not yet been fully implemented.',
     github: 'https://github.com/rhenoresky/Fe_MusicPlayer'
   },
   {
     image: undangan,
-    title: 'Undangan Pernikahan',
-    description: 'Undangan pernikahan secara online, memungkinkan pengantin untuk menghemat waktu dan biaya dalam penyebaran informasi. Website ini menyajikan informasi lengkap seputar acara pernikahan, dari detail pengantin, reservasi undangan, jadwal akad dan resepsi, lokasi, galeri foto, hingga ucapan selamat dari tamu. Fitur khusus seperti music pengiring dan hitung mundur tanggal pernikahan juga disediakan untuk meningkatkan pengalaman pengguna.',
+    title: 'Wedding Invitation',
+    description: 'Online wedding invitations allow brides and grooms to save time and money in disseminating information. The website provides complete information about the wedding event, from bridal details, invitation reservation, akad and reception schedule, location, photo gallery, to guest congratulations. Special features such as musical accompaniment and wedding date countdown are also provided to enhance the user experience.',
     github: 'https://github.com/rhenoresky/undangan-anis'
   },
   {
     image: nizny,
     title: 'Landing Page Nizny',
-    description: 'Sebuah website landing page yang dirancang untuk menyajikan informasi lengkap tentang layanan yang ditawarkan, paket harga, profil perusahaan, kontak yang dapat dihubungi, dan portofolio pekerjaan yang sudah diselesaikan. Website ini dibangun menggunakan HTML, CSS, dan JavaScript, dengan tambahan Bootstrap untuk tata letak responsif dan AOS (Animate On Scroll) untuk animasi elemen saat di-scroll.',
+    description: 'Landing page website designed to present complete information about the services offered, price packages, company profile, contact information, and portfolio of work completed. The website is built using HTML, CSS, and JavaScript, with the addition of Bootstrap for responsive layout and AOS (Animate On Scroll) for scrolling element animation.',
     github: 'https://github.com/rhenoresky/nizny'
   }
 ])
@@ -272,8 +272,9 @@ onMounted(() => {
             </p>
             <div class="flex gap-2 mb-8">
               <a href="project.github"
-                class="text-lg font-light hover:bg-gradient-to-r from-[#aeff4f] to-[#ff4545] bg-clip-text transition duration-500 ease-in-out hover:text-transparent">Lihat
-                selengkapnya</a>
+                class="text-lg font-light hover:bg-gradient-to-r from-[#aeff4f] to-[#ff4545] bg-clip-text transition duration-500 ease-in-out hover:text-transparent">
+                Read more
+              </a>
               <a :href="project.github" class="w-8 h-8">
                 <Icon name="uil:github" color="white" size="32px" />
               </a>
