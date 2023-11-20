@@ -4,4 +4,4 @@ Selamat datang di portofolio digital saya! Ini adalah tempat di mana saya menamp
 
 ## Demo
 
-[**Lihat Portofolio Saya**](https://https://rheno.vercel.app/)
+[**Lihat Portofolio Saya**](https://rheno.vercel.app/)
