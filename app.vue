@@ -269,7 +269,7 @@ onMounted(() => {
               {{ project.description }}
             </p>
             <div class="flex gap-2 mb-8">
-              <a href="project.github"
+              <a :href="project.github"
                 class="text-lg font-light hover:bg-gradient-to-r from-[#aeff4f] to-[#ff4545] bg-clip-text transition duration-500 ease-in-out hover:text-transparent">
                 Read more
               </a>
