@@ -257,7 +257,7 @@ onMounted(() => {
       </h2>
       <swiper-container slides-per-view="1" :space-between="spaceBetween" :pagination="{ hideOnClick: true }"
         :breakpoints="{ 768: { slidesPerView: 3, } }">
-        <swiper-slide id="portfolioItem" v-for="(project, i) of dataProject" :key="i" class="bg-[#252438] p-6 rounded">
+        <swiper-slide id="portfolioItem" v-for="(project, i) of dataProject" :key="i" class="bg-[#252438] p-6 h-full rounded">
           <div class="overflow-hidden rounded-md mb-4">
             <img :src="project.image" alt="AspirasiDesa">
           </div>
