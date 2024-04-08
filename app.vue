@@ -216,7 +216,7 @@ onMounted(() => {
       </div>
       <article class="flex px-4 justify-center font-bold flex-col w-full md:gap-8 gap-6 md:h-screen">
         <h1 id="hello"
-          class="uppercase md:text-9xl text-4xl text-end md:mt-10 mt-24 text-slate-100 tracking-wider opacity-0">
+          class="uppercase md:text-7xl lg:text-9xl text-4xl text-end md:mt-10 mt-24 text-slate-100 tracking-wider opacity-0">
           Hello, I'm<br>Rheno Resky<br>Nugraha
         </h1>
         <p id="welcome" class="uppercase md:text-5xl text-2xl text-start text-slate-100 tracking-wider opacity-0">Welcome
@@ -225,7 +225,7 @@ onMounted(() => {
       </article>
     </div>
     <div id="avatarScreen"
-      class="md:h-screen h-[680px] md:pl-16 w-full flex flex-col md:flex-row md:pt-0 pt-4 mt-10 md:mt-0 items-center md:gap-4 md:justify-center">
+      class="md:h-screen h-[680px] xl:pl-16 w-full flex flex-col md:flex-row md:pt-0 pt-4 mt-10 md:mt-0 items-center md:gap-4 md:justify-center">
       <section class="md:basis-4/12 md:px-0 px-4 md:w-full w-2/3 md:h-full flex justify-center items-center">
         <div id="avatarBox" class="ring-2 scale-0 ring-slate-100 rounded">
           <img id="avatar" class="opacity-0" :src=avatar alt="avatar">
@@ -243,7 +243,7 @@ onMounted(() => {
           <h2 id="about" class="uppercase md:text-6xl text-3xl font-semibold text-center text-slate-100 mb-4 md:mb-10">
             About me
           </h2>
-          <p id="about" class="md:text-2xl text-lg font-light text-center text-slate-100 md:w-2/3">
+          <p id="about" class="lg:text-2xl text-lg font-light text-center text-slate-100 md:w-2/3">
             I am an individual who enjoys learning about the world of technology. My enthusiasm for learning drives me to
             continually expand my knowledge and skills. My desire to explore new things enables me to stay relevant in the
             rapidly evolving world of technology
@@ -257,7 +257,7 @@ onMounted(() => {
       </h2>
       <swiper-container slides-per-view="1" :space-between="spaceBetween" :pagination="{ hideOnClick: true }"
         :breakpoints="{ 768: { slidesPerView: 3, } }">
-        <swiper-slide id="portfolioItem" v-for="(project, i) of dataProject" :key="i" class="bg-[#252438] p-6 h-full rounded">
+        <swiper-slide id="portfolioItem" v-for="(project, i) of dataProject" :key="i" class="bg-[#252438] p-6 h-auto md:h-[420px] rounded">
           <div class="overflow-hidden rounded-md mb-4">
             <img :src="project.image" alt="AspirasiDesa">
           </div>
@@ -269,11 +269,11 @@ onMounted(() => {
               {{ project.description }}
             </p>
             <div class="flex gap-2 mb-8">
-              <a :href="project.github"
+              <a :href="project.github" target="_blank"
                 class="text-lg font-light hover:bg-gradient-to-r from-[#aeff4f] to-[#ff4545] bg-clip-text transition duration-500 ease-in-out hover:text-transparent">
                 Read more
               </a>
-              <a :href="project.github" class="w-8 h-8">
+              <a :href="project.github" target="_blank" class="w-8 h-8">
                 <Icon name="uil:github" color="white" size="32px" />
               </a>
             </div>
